@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #000000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to bottom right, #5d5d5e, #0e0e0f);
+  padding: 2rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero button {
+  padding: 0.8rem 1.5rem;
+  background: #868686;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.hero button:hover {
+  background: #777777;
+}
+
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.cards-section {
+  background: #888888;
+}
+
+.card-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.card {
+  background: #46464d;
+  padding: 2rem;
+  border-radius: 8px;
+  flex: 1 1 100px;
+  min-width: 220px;
+  max-width: 350px;
+  margin: 0.5rem 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+footer {
+  padding: 2rem;
+  background: #111;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Responsive adjustments for card container and cards */
+@media (max-width: 700px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .card {
+    width: 90%;
+    min-width: unset;
+    max-width: unset;
+    font-size: 1rem;
+  }
+  section {
+    padding: 2rem 0.5rem;
+  }
+}
